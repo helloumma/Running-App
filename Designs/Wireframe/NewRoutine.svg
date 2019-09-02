@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375" height="812" viewBox="0 0 375 812">
+  <defs>
+    <clipPath id="clip-iPhone_X_XS_2">
+      <rect width="375" height="812"/>
+    </clipPath>
+  </defs>
+  <g id="iPhone_X_XS_2" data-name="iPhone X/XS – 2" clip-path="url(#clip-iPhone_X_XS_2)">
+    <rect width="375" height="812" fill="#fff"/>
+    <g id="Rectangle_6" data-name="Rectangle 6" transform="translate(14 397)" fill="#707070" stroke="#707070" stroke-width="1">
+      <rect width="348" height="46" rx="6" stroke="none"/>
+      <rect x="0.5" y="0.5" width="347" height="45" rx="5.5" fill="none"/>
+    </g>
+    <text id="START_THAT_RUN" data-name="START THAT RUN" transform="translate(39 45)" fill="#707070" font-size="35" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="700"><tspan x="0" y="0">START THAT RUN</tspan></text>
+    <text id="New_Routine" data-name="New Routine" transform="translate(35 102)" fill="#707070" font-size="50" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="700"><tspan x="0" y="0">New Routine</tspan></text>
+    <text id="Time" transform="translate(14 250)" fill="#707070" font-size="30" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="700"><tspan x="0" y="0">Time</tspan></text>
+    <text id="Distance" transform="translate(7 335)" fill="#707070" font-size="30" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="700"><tspan x="0" y="0">Distance</tspan></text>
+    <text id="Walk" transform="translate(133 429)" fill="#fff" font-size="30" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="700"><tspan x="0" y="0">Walk</tspan></text>
+    <line id="Line_1" data-name="Line 1" y2="46" transform="translate(286.457 216.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="Mins" transform="translate(292 246)" fill="#707070" font-size="18" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="700"><tspan x="0" y="0">Mins</tspan></text>
+    <g id="Polygon_1" data-name="Polygon 1" transform="translate(356 246) rotate(180)" fill="#707070">
+      <path d="M 10.15436172485352 9.5 L 0.8456379771232605 9.5 L 5.5 1.037523627281189 L 10.15436172485352 9.5 Z" stroke="none"/>
+      <path d="M 5.5 2.075047492980957 L 1.691275596618652 9 L 9.308724403381348 9 L 5.5 2.075047492980957 M 5.5 0 L 11 10 L 0 10 L 5.5 0 Z" stroke="none" fill="#707070"/>
+    </g>
+    <g id="Rectangle_5" data-name="Rectangle 5" transform="translate(150 306)" fill="none" stroke="#707070" stroke-width="1">
+      <rect width="212" height="46" rx="6" stroke="none"/>
+      <rect x="0.5" y="0.5" width="211" height="45" rx="5.5" fill="none"/>
+    </g>
+    <line id="Line_2" data-name="Line 2" y2="46" transform="translate(286.457 306.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="_" data-name="+" transform="translate(310 427)" fill="#fff" font-size="30" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="700"><tspan x="0" y="0">+</tspan></text>
+    <g id="Rectangle_7" data-name="Rectangle 7" transform="translate(14 434)" fill="none" stroke="#707070" stroke-width="1">
+      <rect width="348" height="46" rx="6" stroke="none"/>
+      <rect x="0.5" y="0.5" width="347" height="45" rx="5.5" fill="none"/>
+    </g>
+    <line id="Line_3" data-name="Line 3" y2="46" transform="translate(277.5 434.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="Mins-2" data-name="Mins" transform="translate(282 467)" fill="#707070" font-size="22" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="700"><tspan x="0" y="0">Mins</tspan></text>
+    <g id="Polygon_3" data-name="Polygon 3" transform="translate(356 467) rotate(180)" fill="#707070">
+      <path d="M 12.16052436828613 11.50000095367432 L 0.8394758105278015 11.50000095367432 L 6.5 1.049802541732788 L 12.16052436828613 11.50000095367432 Z" stroke="none"/>
+      <path d="M 6.5 2.09958553314209 L 1.67894172668457 11.00000095367432 L 11.32105827331543 11.00000095367432 L 6.5 2.09958553314209 M 6.5 9.5367431640625e-07 L 13 12.00000095367432 L 0 12.00000095367432 L 6.5 9.5367431640625e-07 Z" stroke="none" fill="#707070"/>
+    </g>
+    <g id="Rectangle_8" data-name="Rectangle 8" transform="translate(14 527)" fill="#707070" stroke="#707070" stroke-width="1">
+      <rect width="348" height="46" rx="6" stroke="none"/>
+      <rect x="0.5" y="0.5" width="347" height="45" rx="5.5" fill="none"/>
+    </g>
+    <text id="Power_Walk" data-name="Power Walk" transform="translate(103 561)" fill="#fff" font-size="30" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="700"><tspan x="0" y="0">Power Walk</tspan></text>
+    <text id="_2" data-name="+" transform="translate(310 557)" fill="#fff" font-size="30" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="700"><tspan x="0" y="0">+</tspan></text>
+    <g id="Rectangle_9" data-name="Rectangle 9" transform="translate(14 564)" fill="none" stroke="#707070" stroke-width="1">
+      <rect width="348" height="46" rx="6" stroke="none"/>
+      <rect x="0.5" y="0.5" width="347" height="45" rx="5.5" fill="none"/>
+    </g>
+    <line id="Line_4" data-name="Line 4" y2="46" transform="translate(277.5 564.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="Mins-3" data-name="Mins" transform="translate(282 597)" fill="#707070" font-size="22" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="700"><tspan x="0" y="0">Mins</tspan></text>
+    <g id="Polygon_4" data-name="Polygon 4" transform="translate(356 597) rotate(180)" fill="#707070">
+      <path d="M 12.16052436828613 11.50000095367432 L 0.8394758105278015 11.50000095367432 L 6.5 1.049802541732788 L 12.16052436828613 11.50000095367432 Z" stroke="none"/>
+      <path d="M 6.5 2.09958553314209 L 1.67894172668457 11.00000095367432 L 11.32105827331543 11.00000095367432 L 6.5 2.09958553314209 M 6.5 9.5367431640625e-07 L 13 12.00000095367432 L 0 12.00000095367432 L 6.5 9.5367431640625e-07 Z" stroke="none" fill="#707070"/>
+    </g>
+    <g id="Rectangle_10" data-name="Rectangle 10" transform="translate(14 657)" fill="#707070" stroke="#707070" stroke-width="1">
+      <rect width="348" height="46" rx="6" stroke="none"/>
+      <rect x="0.5" y="0.5" width="347" height="45" rx="5.5" fill="none"/>
+    </g>
+    <text id="Run" transform="translate(146 686)" fill="#fff" font-size="30" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="700"><tspan x="0" y="0">Run</tspan></text>
+    <text id="_3" data-name="+" transform="translate(310 687)" fill="#fff" font-size="30" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="700"><tspan x="0" y="0">+</tspan></text>
+    <g id="Rectangle_11" data-name="Rectangle 11" transform="translate(14 694)" fill="none" stroke="#707070" stroke-width="1">
+      <rect width="348" height="46" rx="6" stroke="none"/>
+      <rect x="0.5" y="0.5" width="347" height="45" rx="5.5" fill="none"/>
+    </g>
+    <line id="Line_5" data-name="Line 5" y2="46" transform="translate(277.5 694.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="Mins-4" data-name="Mins" transform="translate(282 727)" fill="#707070" font-size="22" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="700"><tspan x="0" y="0">Mins</tspan></text>
+    <g id="Polygon_5" data-name="Polygon 5" transform="translate(356 727) rotate(180)" fill="#707070">
+      <path d="M 12.16052436828613 11.50000095367432 L 0.8394758105278015 11.50000095367432 L 6.5 1.049802541732788 L 12.16052436828613 11.50000095367432 Z" stroke="none"/>
+      <path d="M 6.5 2.09958553314209 L 1.67894172668457 11.00000095367432 L 11.32105827331543 11.00000095367432 L 6.5 2.09958553314209 M 6.5 9.5367431640625e-07 L 13 12.00000095367432 L 0 12.00000095367432 L 6.5 9.5367431640625e-07 Z" stroke="none" fill="#707070"/>
+    </g>
+    <g id="Rectangle_12" data-name="Rectangle 12" transform="translate(146 760)" fill="#707070" stroke="#707070" stroke-width="1">
+      <rect width="85" height="42" rx="6" stroke="none"/>
+      <rect x="0.5" y="0.5" width="84" height="41" rx="5.5" fill="none"/>
+    </g>
+    <text id="Save" transform="translate(226 792)" fill="#fff" font-size="33" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="700"><tspan x="-76.461" y="0">Save</tspan></text>
+    <g id="Rectangle_13" data-name="Rectangle 13" transform="translate(150 216)" fill="none" stroke="#707070" stroke-width="1">
+      <rect width="212" height="46" rx="6" stroke="none"/>
+      <rect x="0.5" y="0.5" width="211" height="45" rx="5.5" fill="none"/>
+    </g>
+    <text id="Name" transform="translate(14 171)" fill="#707070" font-size="30" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="700"><tspan x="0" y="0">Name</tspan></text>
+    <g id="Rectangle_22" data-name="Rectangle 22" transform="translate(150 137)" fill="none" stroke="#707070" stroke-width="1">
+      <rect width="212" height="46" rx="6" stroke="none"/>
+      <rect x="0.5" y="0.5" width="211" height="45" rx="5.5" fill="none"/>
+    </g>
+    <text id="Mins-5" data-name="Mins" transform="translate(292 336)" fill="#707070" font-size="18" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="700"><tspan x="0" y="0">Mins</tspan></text>
+    <g id="Polygon_6" data-name="Polygon 6" transform="translate(356 336) rotate(180)" fill="#707070">
+      <path d="M 10.15436172485352 9.5 L 0.8456379771232605 9.5 L 5.5 1.037523627281189 L 10.15436172485352 9.5 Z" stroke="none"/>
+      <path d="M 5.5 2.075047492980957 L 1.691275596618652 9 L 9.308724403381348 9 L 5.5 2.075047492980957 M 5.5 0 L 11 10 L 0 10 L 5.5 0 Z" stroke="none" fill="#707070"/>
+    </g>
+  </g>
+</svg>
