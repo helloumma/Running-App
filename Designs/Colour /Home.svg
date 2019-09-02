@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375" height="812" viewBox="0 0 375 812">
+  <defs>
+    <clipPath id="clip-iPhone_X_XS_1">
+      <rect width="375" height="812"/>
+    </clipPath>
+  </defs>
+  <g id="iPhone_X_XS_1" data-name="iPhone X/XS – 1" clip-path="url(#clip-iPhone_X_XS_1)">
+    <rect width="375" height="812" fill="#a2ffaa"/>
+    <text id="START_THAT_RUN" data-name="START THAT RUN" transform="translate(-38 23)" fill="#00c7af" font-size="100" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="700"><tspan x="67.6" y="98">START </tspan><tspan x="98.2" y="221">THAT </tspan><tspan x="115.8" y="344">RUN</tspan></text>
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="329" height="64" rx="6" transform="translate(23 427)" fill="#07b162"/>
+    <rect id="Rectangle_2" data-name="Rectangle 2" width="329" height="64" rx="6" transform="translate(23 561)" fill="#07b162"/>
+    <rect id="Rectangle_3" data-name="Rectangle 3" width="329" height="64" rx="6" transform="translate(24 695)" fill="#07b162"/>
+    <text id="New_Routine" data-name="New Routine" transform="translate(316 475)" fill="#fff" font-size="42" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="700"><tspan x="-256.62" y="0">New Routine</tspan></text>
+    <text id="Existing_Routine" data-name="Existing Routine" transform="translate(350 609)" fill="#fff" font-size="42" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="700"><tspan x="-326.55" y="0">Existing Routine</tspan></text>
+    <text id="Previous_Runs" data-name="Previous Runs" transform="translate(332 743)" fill="#fff" font-size="42" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="700"><tspan x="-287.868" y="0">Previous Runs</tspan></text>
+    <g id="Path_1" data-name="Path 1" transform="translate(11 9)" fill="none">
+      <path d="M9,0H347a9,9,0,0,1,9,9V786a9,9,0,0,1-9,9H9a9,9,0,0,1-9-9V9A9,9,0,0,1,9,0Z" stroke="none"/>
+      <path d="M 9 2 C 5.14019775390625 2 2 5.14019775390625 2 9 L 2 786 C 2 789.8598022460938 5.14019775390625 793 9 793 L 347 793 C 350.8598022460938 793 354 789.8598022460938 354 786 L 354 9 C 354 5.14019775390625 350.8598022460938 2 347 2 L 9 2 M 9 0 L 347 0 C 351.9704895019531 0 356 4.0294189453125 356 9 L 356 786 C 356 790.9705810546875 351.9704895019531 795 347 795 L 9 795 C 4.029388427734375 795 0 790.9705810546875 0 786 L 0 9 C 0 4.0294189453125 4.029388427734375 0 9 0 Z" stroke="none" fill="#00ae79"/>
+    </g>
+  </g>
+</svg>
