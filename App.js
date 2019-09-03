@@ -4,7 +4,9 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>testing the app</Text>
+      <Text>testing the app - use yarn start to start the app and then open up the 
+        camera, which will take you to expo to scan the QR code.
+      </Text>
     </View>
   );
 }
