@@ -3,7 +3,9 @@ import { StyleSheet, Text, View } from 'react-native';
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 import HomeScreen from './components/HomeScreen';
-import AboutScreen from './components/AboutScreen';
+import ExistingScreen from './components/ExistingScreen';
+import NewScreen from './components/NewScreen';
+import PreviousScreen from './components/PreviousScreen';
 
 
 export default class App extends React.Component {
@@ -16,8 +18,14 @@ const AppNavigator = createStackNavigator({
   Home: {
     screen: HomeScreen
   },
-  About: {
-    screen: AboutScreen
+  Existing: {
+    screen: ExistingScreen
+  },
+  New: {
+    screen: NewScreen
+  },
+  Previous: {
+    screen: PreviousScreen
   }
 });
 
