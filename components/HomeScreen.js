@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-import { Container, Content, Button, Text, Header } from 'native-base';
-
+import { Container, Content, Button, Text } from 'native-base';
 
 export default class Homescreen extends Component {
   render() {
     return (
         <Container>
-            <Header />
             <Text>Home Screen</Text>
             <Content>
                 <Button onPress={() => this.props.navigation.navigate('New')}>

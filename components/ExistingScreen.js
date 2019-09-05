@@ -1,12 +1,38 @@
 import React, { Component } from 'react';
-import { Button, View, Text } from 'react-native';
+import { Container, Content, Button, Text } from 'native-base';
 
 export default class Existingscreen extends Component {
   render() {
     return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Existing Screen</Text>
-      </View>
+        <Container>
+        <Text>Existing Routines</Text>
+        <Content>
+            <Button>
+                <Text>Routine</Text>
+            </Button>
+            <Button>
+                <Text>Routine</Text>
+            </Button>
+            <Button>
+                <Text>Routine</Text>
+            </Button>
+            <Button>
+                <Text>Routine</Text>
+            </Button>
+            <Button>
+                <Text>Routine</Text>
+            </Button>
+            <Button>
+                <Text>Routine</Text>
+            </Button>
+            <Button>
+                <Text>Routine</Text>
+            </Button>
+            <Button>
+                <Text>Routine</Text>
+            </Button>
+        </Content>
+    </Container>
     )
   }
 }

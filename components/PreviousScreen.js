@@ -1,12 +1,38 @@
 import React, { Component } from 'react';
-import { Button, View, Text } from 'react-native';
+import { Container, Content, Button, Text } from 'native-base';
 
 export default class Previousscreen extends Component {
   render() {
     return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Previous Screen</Text>
-      </View>
+        <Container>
+        <Text>Previous Runs</Text>
+        <Content>
+            <Button>
+                <Text>Date</Text>
+            </Button>
+            <Button>
+                <Text>Date</Text>
+            </Button>
+            <Button>
+                <Text>Date</Text>
+            </Button>
+            <Button>
+                <Text>Date</Text>
+            </Button>
+            <Button>
+                <Text>Date</Text>
+            </Button>
+            <Button>
+                <Text>Date</Text>
+            </Button>
+            <Button>
+                <Text>Date</Text>
+            </Button>
+            <Button>
+                <Text>New Routine</Text>
+            </Button>
+        </Content>
+    </Container>
     )
   }
 }
