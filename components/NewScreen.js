@@ -1,35 +1,36 @@
 import React, { Component } from 'react';
-import { Container, Header, Content, Form, Item, Input, Label, Footer, FooterTab, Button, Icon } from 'native-base';
+import { Container, Text, Content, Form, Item, Input, Label, Footer, FooterTab, Button, Icon } from 'native-base';
 
 export default class Newscreen extends Component {
   render() {
     return (
-        <Container>
-         <Header />
+        <Container style={{flex: 1,backgroundColor: '#A2FFAA', justifyContent: 'center'}}>
+        <Text style={{fontSize:40, textAlign: 'center', color:'#00C7AF', fontWeight: 'bold'}}>START THAT RUN</Text>
+        <Text style={{fontSize:40, textAlign: 'center', color:'#07B162', fontWeight: 'bold'}}>New Routine</Text>
         <Content>
           <Form>
             <Item floatingLabel>
-              <Label>Name</Label>
+              <Label style={{fontSize:20, textAlign: 'left', color:'#07B162', fontWeight: 'medium'}}>Name</Label>
               <Input />
             </Item>
             <Item floatingLabel>
-              <Label>Time</Label>
+              <Label style={{fontSize:20, textAlign: 'left', color:'#07B162', fontWeight: 'medium'}}>Time</Label>
               <Input />
             </Item>
             <Item floatingLabel>
-              <Label>Distance</Label>
+              <Label style={{fontSize:20, textAlign: 'left', color:'#07B162', fontWeight: 'medium'}}>Distance</Label>
               <Input />
             </Item>
             <Item floatingLabel>
-              <Label>Walk</Label>
+              <Label style={{fontSize:20, textAlign: 'left', color:'#07B162', fontWeight: 'medium'}}>Walk</Label>
               <Input />
             </Item>
             <Item floatingLabel>
-              <Label>Power Walk</Label>
+              <Label style={{fontSize:20, textAlign: 'left', color:'#07B162', fontWeight: 'medium'}}>Power Walk</Label>
               <Input />
             </Item>
             <Item floatingLabel last>
-              <Label>Run</Label>
+              <Label style={{fontSize:20, textAlign: 'left', color:'#07B162', fontWeight: 'medium'}}>Run</Label>
               <Input />
             </Item>
           </Form>
