@@ -10,27 +10,27 @@ export default class Newscreen extends Component {
         <Content>
           <Form>
             <Item floatingLabel>
-              <Label style={{fontSize:20, textAlign: 'left', color:'#07B162', fontWeight: 'medium'}}>Name</Label>
+              <Label style={{fontSize:20, textAlign: 'left', color:'#07B162', fontWeight: '500'}}>Name</Label>
               <Input />
             </Item>
             <Item floatingLabel>
-              <Label style={{fontSize:20, textAlign: 'left', color:'#07B162', fontWeight: 'medium'}}>Time</Label>
+              <Label style={{fontSize:20, textAlign: 'left', color:'#07B162', fontWeight: '500'}}>Time</Label>
               <Input />
             </Item>
             <Item floatingLabel>
-              <Label style={{fontSize:20, textAlign: 'left', color:'#07B162', fontWeight: 'medium'}}>Distance</Label>
+              <Label style={{fontSize:20, textAlign: 'left', color:'#07B162', fontWeight: '500'}}>Distance</Label>
               <Input />
             </Item>
             <Item floatingLabel>
-              <Label style={{fontSize:20, textAlign: 'left', color:'#07B162', fontWeight: 'medium'}}>Walk</Label>
+              <Label style={{fontSize:20, textAlign: 'left', color:'#07B162', fontWeight: '500'}}>Walk</Label>
               <Input />
             </Item>
             <Item floatingLabel>
-              <Label style={{fontSize:20, textAlign: 'left', color:'#07B162', fontWeight: 'medium'}}>Power Walk</Label>
+              <Label style={{fontSize:20, textAlign: 'left', color:'#07B162', fontWeight: '500'}}>Power Walk</Label>
               <Input />
             </Item>
             <Item floatingLabel last>
-              <Label style={{fontSize:20, textAlign: 'left', color:'#07B162', fontWeight: 'medium'}}>Run</Label>
+              <Label style={{fontSize:20, textAlign: 'left', color:'#07B162', fontWeight: '500'}}>Run</Label>
               <Input />
             </Item>
           </Form>
