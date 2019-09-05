@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import { Container, Content, Button, Text } from 'native-base';
 
 export default class Homescreen extends Component {
+    
   render() {
+    //style: PropTypes.oneOfType([PropTypes.object, PropTypes.number])
     return (
         <Container style={{flex: 1,backgroundColor: '#A2FFAA', justifyContent: 'center'}}>
             <Text style={{fontSize:'100%', textAlign: 'center', color:'#00C7AF', fontWeight: 'bold'}}>START THAT RUN</Text>
