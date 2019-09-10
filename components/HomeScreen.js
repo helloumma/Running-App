@@ -1,19 +1,23 @@
 import React, { Component } from 'react';
 import { Container, Content, Button } from 'native-base';
 import { StyleSheet, View, Text } from 'react-native';
-import { AppLoading, Font } from 'expo';
+import { Font, AppLoading } from 'expo'
 
-state = {
-    fontsLoaded: false
-}
 export default class Homescreen extends Component {
-    async componentDidMount() {
-        await Font.loadAsync({
-          test1: require('../assets/fonts/SourceCodePro-Medium.ttf'),
-        }).then(() => this.setState({fontsLoaded:true}))
-    
-        
+    constructor(props) {
+        super(props)
+        this.state = {
+          fontLoaded: false
+        }
       }
+    
+      async componentDidMount() {
+        await Font.loadAsync({
+            'test1': require('./assets/fonts/SourceCodePro-Medium.ttf'),
+        })
+     
+        this.setState({fontLoaded: true})
+     }
   render() {
     //style: PropTypes.oneOfType([PropTypes.object, PropTypes.number])
     return (
