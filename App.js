@@ -6,9 +6,17 @@ import HomeScreen from './components/HomeScreen';
 import ExistingScreen from './components/ExistingScreen';
 import NewScreen from './components/NewScreen';
 import PreviousScreen from './components/PreviousScreen';
+import RouteScreen from './components/RouteScreen';
+import { Font } from 'expo';
 
 
 export default class App extends React.Component {
+  async componentDidMount() {
+    await Font.loadAsync({
+      'font1': require('./assets/fonts/SourceCodePro-Medium.ttf'),
+    });
+    this.props.fontLoader();
+  }
   render() {
     return <AppContainer />;
   }
@@ -26,6 +34,9 @@ const AppNavigator = createStackNavigator({
   },
   Previous: {
     screen: PreviousScreen
+  }, 
+  Route: {
+    screen: RouteScreen
   }
 });
 

@@ -1,30 +1,58 @@
 import React, { Component } from 'react';
-import { Container, Content, Button, Text } from 'native-base';
+import { Container, Content, Button } from 'native-base';
+import { StyleSheet, View, Text } from 'react-native';
+import { AppLoading, Font } from 'expo';
 
+state = {
+    fontsLoaded: false
+}
 export default class Homescreen extends Component {
+    async componentDidMount() {
+        await Font.loadAsync({
+          'test1': require('../assets/fonts/SourceCodePro-Medium.ttf'),
+        }).then(() => this.setState({fontsLoaded:true}))
     
+        
+      }
   render() {
     //style: PropTypes.oneOfType([PropTypes.object, PropTypes.number])
     return (
-        <Container style={{flex: 1,backgroundColor: '#A2FFAA', justifyContent: 'center'}}>
+        
+        <View style={styles.container}>
             <Text style={{fontSize:100, textAlign: 'center', color:'#00C7AF', fontWeight: 'bold'}}>START THAT RUN</Text>
             <Content>
                 <Button style={{padding:'30%', backgroundColor:'#07B162'}} onPress={() => this.props.navigation.navigate('New')}>
-                    <Text style={{fontSize: 20, textAlign: 'center', color:'white', fontWeight: 'bold'}}>New Routine</Text>
+                    <Text style={styles.home}>New Routine</Text>
                 </Button>
-                
                 <Button style={{padding:'25%', backgroundColor:'#07B162'}} onPress={() => this.props.navigation.navigate('Existing')}>
-                    <Text style={{fontSize:20, textAlign: 'center', color:'white', fontWeight: 'bold'}}>Existing Routine</Text>
+                    <Text style={styles.home}>Existing Routine</Text>
                 </Button>
-
                 <Button style={{padding:'30%', backgroundColor:'#07B162'}} onPress={() => this.props.navigation.navigate('Previous')}>
-                    <Text style={{fontSize:20, textAlign: 'center', color:'white', fontWeight: 'bold'}}>Previous Runs</Text>
+                    <Text style={styles.home}>Previous Runs</Text>
+                </Button>
+                <Button style={{padding:'30%', backgroundColor:'#07B162'}} onPress={() => this.props.navigation.navigate('Route')}>
+                    <Text style={styles.home}>Routes</Text>
                 </Button>
             </Content>
-        </Container>
+        </View>
     )
   }
 }
+
+const styles = StyleSheet.create({
+    container: {
+        backgroundColor: '#FFA3A7',
+        justifyContent: 'center',
+        flex: 1
+    }, 
+    home: {
+        fontSize: 20, 
+        textAlign: 'center', 
+        color:'white', 
+        fontWeight: 'bold',
+        fontFamily: 'test1'
+        }
+})
 /*
 <Button
             title="New Routine"
