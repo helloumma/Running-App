@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375" height="812" viewBox="0 0 375 812">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f7e5ab"/>
+      <stop offset="0.487" stop-color="#ffa998"/>
+      <stop offset="1" stop-color="#e7213a"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1.142" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f3d6a8"/>
+      <stop offset="0.458" stop-color="#f98175"/>
+      <stop offset="0.847" stop-color="#fe9e8a"/>
+      <stop offset="1" stop-color="#eb7b78"/>
+    </linearGradient>
+    <clipPath id="clip-iPhone_X_XS_15">
+      <rect width="375" height="812"/>
+    </clipPath>
+  </defs>
+  <g id="iPhone_X_XS_15" data-name="iPhone X/XS – 15" clip-path="url(#clip-iPhone_X_XS_15)">
+    <rect width="375" height="812" fill="url(#linear-gradient)"/>
+    <g id="Rectangle_2" data-name="Rectangle 2" transform="translate(31 31)" fill="#fff" stroke="#fff" stroke-width="1">
+      <rect width="314" height="751" rx="8" stroke="none"/>
+      <rect x="0.5" y="0.5" width="313" height="750" rx="7.5" fill="none"/>
+    </g>
+    <rect id="Rectangle_5" data-name="Rectangle 5" width="276" height="708" rx="3" transform="translate(50 52)" fill="url(#linear-gradient-2)"/>
+    <text id="Run_" data-name="Run!" transform="translate(113 134)" fill="#fff" font-size="70" font-family="SourceCodePro-Regular, Source Code Pro"><tspan x="0" y="0">Run!</tspan></text>
+  </g>
+</svg>
