@@ -14,7 +14,6 @@ export default class Homescreen extends Component {
         await Font.loadAsync({
             test1: require('../assets/fonts/SourceCodePro-Medium.ttf'),
         })
-     
         this.setState({fontLoaded: true})
      }
   render() {
@@ -25,8 +24,8 @@ export default class Homescreen extends Component {
     return (
         
         <View style={styles.container}>
-            <Text style={{fontSize:100, textAlign: 'center', color:'#00C7AF', fontWeight: 'bold'}}>START THAT RUN</Text>
-            <Content>
+            <Content style={styles.content}>
+            <Text style={styles.title}>Run!</Text>
                 <Button style={{padding:'30%', backgroundColor:'#07B162'}} onPress={() => this.props.navigation.navigate('New')}>
                     <Text style={styles.home}>New Routine</Text>
                 </Button>
@@ -49,15 +48,33 @@ const styles = StyleSheet.create({
     container: {
         backgroundColor: '#FFA3A7',
         justifyContent: 'center',
-        flex: 1
+        flex: 1, 
+        
     }, 
+    content: {
+        position: 'absolute',
+        borderWidth: 1,
+    borderColor: '#fff',
+    top: 30,
+    left:30,
+    right: 30,
+    borderRadius:  8,
+    backgroundColor: '#FFA3A7',
+    },
     home: {
         fontSize: 20, 
         textAlign: 'center', 
         color:'white', 
         fontWeight: 'bold',
         fontFamily: 'test1'
-        }
+        },
+    title: {
+        fontSize:70, 
+        textAlign: 'center', 
+        color:'white', 
+        fontWeight: 'bold',
+        fontFamily: 'test1'
+    }
 })
 /*
 <Button
