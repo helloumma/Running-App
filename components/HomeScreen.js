@@ -73,7 +73,8 @@ const styles = StyleSheet.create({
         textAlign: 'center', 
         color:'white', 
         fontWeight: 'bold',
-        fontFamily: 'test1'
+        fontFamily: 'test1',
+        paddingTop: 20,
     }
 })
 /*
