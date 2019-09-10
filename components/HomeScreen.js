@@ -9,7 +9,7 @@ state = {
 export default class Homescreen extends Component {
     async componentDidMount() {
         await Font.loadAsync({
-          'test1': require('../assets/fonts/SourceCodePro-Medium.ttf'),
+          test1: require('../assets/fonts/SourceCodePro-Medium.ttf'),
         }).then(() => this.setState({fontsLoaded:true}))
     
         
