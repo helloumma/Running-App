@@ -22,10 +22,11 @@ export default class Homescreen extends Component {
       }
     //style: PropTypes.oneOfType([PropTypes.object, PropTypes.number])
     return (
-        
         <View style={styles.container}>
             <Content style={styles.content}>
             <Text style={styles.title}>Run!</Text>
+            <Content style={styles.blueBox}></Content>
+            <Content style={styles.pinkBox}></Content>
                 <Button style={{padding:'30%', backgroundColor:'#07B162'}} onPress={() => this.props.navigation.navigate('New')}>
                     <Text style={styles.home}>New Routine</Text>
                 </Button>
@@ -54,12 +55,29 @@ const styles = StyleSheet.create({
     content: {
         position: 'absolute',
         borderWidth: 1,
-    borderColor: '#fff',
-    top: 30,
-    left:30,
-    right: 30,
-    borderRadius:  8,
-    backgroundColor: '#FFA3A7',
+        borderColor: '#fff',
+        top: 30,
+        left:30,
+        right: 30,
+        borderRadius:  8,
+        backgroundColor: '#FFA3A7',
+        zIndex:2
+    },
+    blueBox: {
+        top: -80,
+        left: 25,
+        height: 550, 
+        width: 800,
+        backgroundColor: '#A8CFE3',
+        zIndex:-1
+    },
+    pinkBox: {
+        top: -525,
+        left: -25,
+        height: 400, 
+        width: 200,
+        backgroundColor: '#FFB9BB',
+        zIndex:1
     },
     home: {
         fontSize: 20, 
@@ -75,6 +93,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         fontFamily: 'test1',
         paddingTop: 20,
+        zIndex: 1,
     }
 })
 /*
