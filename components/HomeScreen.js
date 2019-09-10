@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Content, Button } from 'native-base';
 import { StyleSheet, View, Text } from 'react-native';
-import { Font, AppLoading } from 'expo'
-
+import * as Font from 'expo-font'
 export default class Homescreen extends Component {
     constructor(props) {
         super(props)
@@ -13,12 +12,15 @@ export default class Homescreen extends Component {
     
       async componentDidMount() {
         await Font.loadAsync({
-            'test1': require('./assets/fonts/SourceCodePro-Medium.ttf'),
+            test1: require('../assets/fonts/SourceCodePro-Medium.ttf'),
         })
      
         this.setState({fontLoaded: true})
      }
   render() {
+    if (!this.state.fontLoaded) {
+        return <Text>False</Text>
+      }
     //style: PropTypes.oneOfType([PropTypes.object, PropTypes.number])
     return (
         
