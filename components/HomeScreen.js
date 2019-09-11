@@ -13,6 +13,7 @@ export default class Homescreen extends Component {
       async componentDidMount() {
         await Font.loadAsync({
             test1: require('../assets/fonts/SourceCodePro-Medium.ttf'),
+            test2: require('../assets/fonts/SourceCodePro-Light.ttf'),
         })
         this.setState({fontLoaded: true})
      }
@@ -23,22 +24,16 @@ export default class Homescreen extends Component {
     //style: PropTypes.oneOfType([PropTypes.object, PropTypes.number])
     return (
         <View style={styles.container}>
-            <Content style={styles.content}>
-            <Text style={styles.title}>Run!</Text>
             <Content style={styles.blueBox}></Content>
             <Content style={styles.pinkBox}></Content>
-                <Button style={{padding:'30%', backgroundColor:'#07B162'}} onPress={() => this.props.navigation.navigate('New')}>
-                    <Text style={styles.home}>New Routine</Text>
-                </Button>
-                <Button style={{padding:'25%', backgroundColor:'#07B162'}} onPress={() => this.props.navigation.navigate('Existing')}>
-                    <Text style={styles.home}>Existing Routine</Text>
-                </Button>
-                <Button style={{padding:'30%', backgroundColor:'#07B162'}} onPress={() => this.props.navigation.navigate('Previous')}>
-                    <Text style={styles.home}>Previous Runs</Text>
-                </Button>
-                <Button style={{padding:'30%', backgroundColor:'#07B162'}} onPress={() => this.props.navigation.navigate('Route')}>
-                    <Text style={styles.home}>Routes</Text>
-                </Button>
+
+            <Content style={styles.content}>
+            <Text style={styles.title}>Run!</Text>
+            <Text style={styles.navText}>Home</Text>
+            <Text style={styles.navText}>Add</Text>
+            <Text style={styles.navText}>Edit</Text>
+            <Text style={styles.navText}>View</Text>
+            <Text style={styles.navText}>Route</Text>
             </Content>
         </View>
     )
@@ -49,32 +44,34 @@ const styles = StyleSheet.create({
     container: {
         backgroundColor: '#FFA3A7',
         justifyContent: 'center',
-        flex: 1, 
-        
+        flex: 1,
     }, 
     content: {
         position: 'absolute',
         borderWidth: 1,
         borderColor: '#fff',
-        top: 30,
+        top: -425,
         left:30,
         right: 30,
         borderRadius:  8,
-        backgroundColor: '#FFA3A7',
-        zIndex:2
-    },
-    blueBox: {
-        top: -80,
-        left: 25,
-        height: 550, 
-        width: 800,
-        backgroundColor: '#A8CFE3',
+        backgroundColor: 'transparent',
+        height: 675,
         zIndex:-1
     },
+    blueBox: {
+        position: 'absolute',
+        top: 75,
+        left: 60,
+        height: 600, 
+        width: 600,
+        backgroundColor: '#A8CFE3',
+        zIndex:0
+    },
     pinkBox: {
-        top: -525,
+        position: 'absolute',
+        top: -70,
         left: -25,
-        height: 400, 
+        height: 475, 
         width: 200,
         backgroundColor: '#FFB9BB',
         zIndex:1
@@ -92,7 +89,17 @@ const styles = StyleSheet.create({
         color:'white', 
         fontWeight: 'bold',
         fontFamily: 'test1',
-        paddingTop: 20,
+        paddingTop: 40,
+        zIndex: 1,
+    }, 
+    navText: {
+        fontSize:30, 
+        textAlign: 'left', 
+        color:'white', 
+        fontWeight: 'bold',
+        fontFamily: 'test2',
+        paddingTop: 40,
+        paddingLeft: '50%',
         zIndex: 1,
     }
 })
@@ -105,3 +112,19 @@ const styles = StyleSheet.create({
             title="Previous Runs"
             onPress={() => this.props.navigation.navigate('Previous')}
         />*/
+
+
+        /*
+         <Button style={{padding:'30%', backgroundColor:'#07B162'}} onPress={() => this.props.navigation.navigate('New')}>
+                    <Text style={styles.home}>New Routine</Text>
+                </Button>
+                <Button style={{padding:'25%', backgroundColor:'#07B162'}} onPress={() => this.props.navigation.navigate('Existing')}>
+                    <Text style={styles.home}>Existing Routine</Text>
+                </Button>
+                <Button style={{padding:'30%', backgroundColor:'#07B162'}} onPress={() => this.props.navigation.navigate('Previous')}>
+                    <Text style={styles.home}>Previous Runs</Text>
+                </Button>
+                <Button style={{padding:'30%', backgroundColor:'#07B162'}} onPress={() => this.props.navigation.navigate('Route')}>
+                    <Text style={styles.home}>Routes</Text>
+                </Button>
+         */
