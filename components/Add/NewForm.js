@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text } from 'react-native';
-import { Content, Form, Item, Input, Label } from 'native-base';
+import { Content, Form, Item, Input, Label, Button } from 'native-base';
 import * as Font from 'expo-font'
 
 export default class NewForm extends Component {
@@ -36,6 +36,18 @@ export default class NewForm extends Component {
               <Label style={styles.label}>Distance</Label>
               <Input />
             </Item>
+            <Button style={styles.button}>
+                <Text style={styles.navText}>Walk +</Text>
+            </Button>
+            <Button style={styles.button}>
+                <Text style={styles.navText}>Power Walk +</Text>
+            </Button>
+            <Button style={styles.button}>
+                <Text style={styles.navText}>Run +</Text>
+            </Button>
+            <Button style={styles.button}>
+                <Text style={styles.navText}>Submit</Text>
+            </Button>
           </Form>
         </Content>
     );
@@ -49,5 +61,23 @@ const styles = StyleSheet.create({
       color:'white', 
       fontFamily: 'test2',
   }, 
+  button: {
+    fontSize: 20, 
+    textAlign: 'center', 
+    color:'white', 
+    fontWeight: 'bold',
+    fontFamily: 'test1',
+    backgroundColor: 'white',
+    marginBottom: 20
+  },
+  navText: {
+    fontSize:20, 
+    textAlign: 'center', 
+    color:'#A8CFE3', 
+    fontWeight: 'bold',
+    fontFamily: 'test2',
+    paddingLeft:20
+  },
+  
   
 })
