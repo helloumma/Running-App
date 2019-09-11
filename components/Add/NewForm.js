@@ -12,6 +12,7 @@ export default class NewForm extends Component {
 }
   async componentDidMount() {
     await Font.loadAsync({
+        test0: require('../../assets/fonts/SourceCodePro-Bold.ttf'),
         test1: require('../../assets/fonts/SourceCodePro-Medium.ttf'),
         test2: require('../../assets/fonts/SourceCodePro-Light.ttf'),
     })
@@ -22,7 +23,7 @@ export default class NewForm extends Component {
       return <Text>False</Text>
     }
     return (
-        <Content>
+        <Content style={styles.content}>
           <Form>
             <Item stackedLabel >
               <Label style={styles.label}>Name</Label>
@@ -45,7 +46,7 @@ export default class NewForm extends Component {
             <Button style={styles.button}>
                 <Text style={styles.navText}>Run +</Text>
             </Button>
-            <Button style={styles.button}>
+            <Button style={styles.submitButton}>
                 <Text style={styles.navText}>Submit</Text>
             </Button>
           </Form>
@@ -55,6 +56,10 @@ export default class NewForm extends Component {
 }
 
 const styles = StyleSheet.create({
+  content: {
+    paddingLeft: 20,
+    paddingTop:20
+  },
   label: {
       fontSize:20, 
       textAlign: 'left', 
@@ -68,7 +73,21 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontFamily: 'test1',
     backgroundColor: 'white',
-    marginBottom: 20
+    marginBottom: 20,
+    width:'95%',
+    marginLeft:10
+  },
+  submitButton: {
+    fontSize: 20, 
+    textAlign: 'center', 
+    color:'white', 
+    fontWeight: 'bold',
+    fontFamily: 'test0',
+    backgroundColor: 'white',
+    fontWeight: "800",
+    marginBottom: 10,
+    width:'40%',
+    marginLeft:100
   },
   navText: {
     fontSize:20, 
