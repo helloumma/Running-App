@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { Container, Content, Button } from 'native-base';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, Text} from 'react-native';
 import * as Font from 'expo-font'
 import HomeSvg from './Home/HomeIcon'
 import Image from 'react-native-svg'
 import testSvg from '../assets/Home/Home.svg';
-
+import NewForm from './Add/NewForm'
 export default class Newscreen extends Component {
     constructor(props) {
         super(props)
@@ -31,17 +31,8 @@ export default class Newscreen extends Component {
             <Content style={styles.greenBox}></Content>
             <Content style={styles.content}>
             <Text style={styles.title}>Add Run</Text>
-            <Text style={styles.navText}>Home</Text>
-            <Content style={styles.imageContent}>
-            <Image
-                source={{ uri: '../assets/Home/Home.svg' }}
-                style={{ width: 100, height: 100}}
-            />
-            </Content>
-            <Text style={styles.navText} onPress={() => this.props.navigation.navigate('New')}>Add</Text>
-            <Text style={styles.navText} onPress={() => this.props.navigation.navigate('Existing')}>Edit</Text>
-            <Text style={styles.navText} onPress={() => this.props.navigation.navigate('Previous')}>View</Text>
-            <Text style={styles.navText} onPress={() => this.props.navigation.navigate('Route')}>Route</Text>
+            <NewForm />
+            
             </Content>
         </View>
     )
