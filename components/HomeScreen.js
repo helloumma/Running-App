@@ -2,7 +2,13 @@ import React, { Component } from 'react';
 import { Container, Content, Button } from 'native-base';
 import { StyleSheet, View, Text } from 'react-native';
 import * as Font from 'expo-font'
+import HomeSvg from './Home/HomeIcon'
+import Image from 'react-native-svg'
+import testSvg from '../assets/Home/Home.svg';
+
+
 export default class Homescreen extends Component {
+    
     constructor(props) {
         super(props)
         this.state = {
@@ -17,7 +23,9 @@ export default class Homescreen extends Component {
         })
         this.setState({fontLoaded: true})
      }
+     
   render() {
+   
     if (!this.state.fontLoaded) {
         return <Text>False</Text>
       }
@@ -26,14 +34,23 @@ export default class Homescreen extends Component {
         <View style={styles.container}>
             <Content style={styles.blueBox}></Content>
             <Content style={styles.pinkBox}></Content>
-
             <Content style={styles.content}>
             <Text style={styles.title}>Run!</Text>
+            <Image
+  source={{ uri: '../assets/Home/Home.svg' }}
+  style={{ width: 100, height: 100}}
+/>
             <Text style={styles.navText}>Home</Text>
-            <Text style={styles.navText}>Add</Text>
-            <Text style={styles.navText}>Edit</Text>
-            <Text style={styles.navText}>View</Text>
-            <Text style={styles.navText}>Route</Text>
+            <Content style={styles.imageContent}>
+            <Image
+  source={{ uri: '../assets/Home/Home.svg' }}
+  style={{ width: 100, height: 100}}
+/>
+                </Content>
+            <Text style={styles.navText} onPress={() => this.props.navigation.navigate('New')}>Add</Text>
+            <Text style={styles.navText} onPress={() => this.props.navigation.navigate('Existing')}>Edit</Text>
+            <Text style={styles.navText} onPress={() => this.props.navigation.navigate('Previous')}>View</Text>
+            <Text style={styles.navText} onPress={() => this.props.navigation.navigate('Route')}>Route</Text>
             </Content>
         </View>
     )
@@ -57,6 +74,12 @@ const styles = StyleSheet.create({
         backgroundColor: 'transparent',
         height: 675,
         zIndex:-1
+    },
+    imageContent: {
+        position: 'absolute',
+        top: 75,
+        left: 160,
+        zIndex: 2
     },
     blueBox: {
         position: 'absolute',
