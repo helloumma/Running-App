@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import { Container, Content, Button } from 'native-base';
 import { StyleSheet, View, Text } from 'react-native';
 import * as Font from 'expo-font'
-import HomeSvg from './Home/HomeIcon'
-import Image from 'react-native-svg'
-import testSvg from '../assets/Home/Home.svg';
 
 export default class Previousscreen extends Component {
     constructor(props) {

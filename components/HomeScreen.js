@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import { Container, Content, Button } from 'native-base';
 import { StyleSheet, View, Text } from 'react-native';
 import * as Font from 'expo-font'
-import HomeSvg from './Home/HomeIcon'
 import Image from 'react-native-svg'
-import testSvg from '../assets/Home/Home.svg';
 
 export default class Homescreen extends Component {
     constructor(props) {
@@ -33,10 +31,7 @@ export default class Homescreen extends Component {
             <Text style={styles.title}>Run!</Text>
             <Text style={styles.navText}>Home</Text>
             <Content style={styles.imageContent}>
-            <Image
-                source={{ uri: '../assets/Home/Home.svg' }}
-                style={{ width: 100, height: 100}}
-            />
+           
             </Content>
             <Text style={styles.navText} onPress={() => this.props.navigation.navigate('New')}>Add</Text>
             <Text style={styles.navText} onPress={() => this.props.navigation.navigate('Existing')}>Edit</Text>
