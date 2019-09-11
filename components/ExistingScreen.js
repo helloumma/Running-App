@@ -32,25 +32,25 @@ export default class Existingscreen extends Component {
             <Content style={styles.content}>
             <Text style={styles.title}>Edit Runs</Text>
             <Button style={styles.button}>
-                <Text>Run One</Text>
+                <Text style={styles.navText}>Run One</Text>
             </Button>
             <Button style={styles.button}>
-                <Text>Run Two</Text>
+                <Text style={styles.navText}>Run Two</Text>
             </Button>
             <Button style={styles.button}>
-                <Text>Run Three</Text>
+                <Text style={styles.navText}>Run Three</Text>
             </Button>
             <Button style={styles.button}>
-                <Text>Run Four</Text>
+                <Text style={styles.navText}>Run Four</Text>
             </Button>
             <Button style={styles.button}>
-                <Text>Run Five</Text>
+                <Text style={styles.navText}>Run Five</Text>
             </Button>
             <Button style={styles.button}>
-                <Text>Run Six</Text>
+                <Text style={styles.navText}>Run Six</Text>
             </Button>
             <Button style={styles.button}>
-                <Text>Run Seven</Text>
+                <Text style={styles.navText}>Run Seven</Text>
             </Button>
             </Content>
         </View>
@@ -125,13 +125,11 @@ const styles = StyleSheet.create({
         top: 15
     }, 
     navText: {
-        fontSize:30, 
-        textAlign: 'left', 
-        color:'white', 
+        fontSize:20, 
+        textAlign: 'center', 
+        color:'#00F6B7', 
         fontWeight: 'bold',
         fontFamily: 'test2',
-        paddingTop: 40,
-        paddingLeft: '50%',
-        zIndex: 1,
+        paddingLeft:20
     }
 })
