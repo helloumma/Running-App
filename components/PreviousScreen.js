@@ -27,10 +27,10 @@ export default class Previousscreen extends Component {
       }
     return (
         <View style={styles.container}>
-            <Content style={styles.blueBox}></Content>
+            <Content style={styles.yellowBox}></Content>
             <Content style={styles.greenBox}></Content>
             <Content style={styles.content}>
-            <Text style={styles.title}>View Run</Text>
+            <Text style={styles.title}>View Runs</Text>
             <Text style={styles.navText}>Home</Text>
             <Content style={styles.imageContent}>
             <Image
@@ -50,7 +50,7 @@ export default class Previousscreen extends Component {
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#C0A4F2',
+        backgroundColor: '#FFB9BB',
         justifyContent: 'center',
         flex: 1,
     }, 
@@ -72,13 +72,13 @@ const styles = StyleSheet.create({
         left: 160,
         zIndex: 2
     },
-    blueBox: {
+    yellowBox: {
         position: 'absolute',
         top: 60,
         left: 60,
         height: 625, 
         width: 600,
-        backgroundColor: '#A8CFE3',
+        backgroundColor: '#F0D923',
         zIndex:0
     },
     greenBox: {
@@ -98,14 +98,14 @@ const styles = StyleSheet.create({
         fontFamily: 'test1'
         },
     title: {
-        fontSize:66, 
+        fontSize:55, 
         textAlign: 'left', 
         color:'white', 
         fontWeight: 'bold',
         fontFamily: 'test1',
         paddingTop: 70,
         zIndex: 1,
-        left:10,
+        left:5,
         top: 10
     }, 
     navText: {
