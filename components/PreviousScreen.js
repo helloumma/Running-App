@@ -31,17 +31,27 @@ export default class Previousscreen extends Component {
             <Content style={styles.greenBox}></Content>
             <Content style={styles.content}>
             <Text style={styles.title}>View Runs</Text>
-            <Text style={styles.navText}>Home</Text>
-            <Content style={styles.imageContent}>
-            <Image
-                source={{ uri: '../assets/Home/Home.svg' }}
-                style={{ width: 100, height: 100}}
-            />
-            </Content>
-            <Text style={styles.navText} onPress={() => this.props.navigation.navigate('New')}>Add</Text>
-            <Text style={styles.navText} onPress={() => this.props.navigation.navigate('Existing')}>Edit</Text>
-            <Text style={styles.navText} onPress={() => this.props.navigation.navigate('Previous')}>View</Text>
-            <Text style={styles.navText} onPress={() => this.props.navigation.navigate('Route')}>Route</Text>
+            <Button style={styles.button}>
+                <Text>Run One</Text>
+            </Button>
+            <Button style={styles.button}>
+                <Text>Run Two</Text>
+            </Button>
+            <Button style={styles.button}>
+                <Text>Run Three</Text>
+            </Button>
+            <Button style={styles.button}>
+                <Text>Run Four</Text>
+            </Button>
+            <Button style={styles.button}>
+                <Text>Run Five</Text>
+            </Button>
+            <Button style={styles.button}>
+                <Text>Run Six</Text>
+            </Button>
+            <Button style={styles.button}>
+                <Text>Run Seven</Text>
+            </Button>
             </Content>
         </View>
     )
@@ -66,11 +76,17 @@ const styles = StyleSheet.create({
         height: 675,
         zIndex:-1
     },
-    imageContent: {
-        position: 'absolute',
-        top: 75,
-        left: 160,
-        zIndex: 2
+    button: {
+        top:70,
+        left: 35,
+        fontSize: 20, 
+        textAlign: 'center', 
+        color:'white', 
+        fontWeight: 'bold',
+        fontFamily: 'test1',
+        backgroundColor: 'white',
+        width: '85%',
+        marginBottom: 20
     },
     yellowBox: {
         position: 'absolute',
