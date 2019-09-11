@@ -6,16 +6,13 @@ import HomeSvg from './Home/HomeIcon'
 import Image from 'react-native-svg'
 import testSvg from '../assets/Home/Home.svg';
 
-
 export default class Homescreen extends Component {
-    
     constructor(props) {
         super(props)
         this.state = {
           fontLoaded: false
         }
-      }
-    
+    }
       async componentDidMount() {
         await Font.loadAsync({
             test1: require('../assets/fonts/SourceCodePro-Medium.ttf'),
@@ -25,28 +22,22 @@ export default class Homescreen extends Component {
      }
      
   render() {
-   
     if (!this.state.fontLoaded) {
         return <Text>False</Text>
       }
-    //style: PropTypes.oneOfType([PropTypes.object, PropTypes.number])
     return (
         <View style={styles.container}>
             <Content style={styles.blueBox}></Content>
             <Content style={styles.pinkBox}></Content>
             <Content style={styles.content}>
             <Text style={styles.title}>Run!</Text>
-            <Image
-  source={{ uri: '../assets/Home/Home.svg' }}
-  style={{ width: 100, height: 100}}
-/>
             <Text style={styles.navText}>Home</Text>
             <Content style={styles.imageContent}>
             <Image
-  source={{ uri: '../assets/Home/Home.svg' }}
-  style={{ width: 100, height: 100}}
-/>
-                </Content>
+                source={{ uri: '../assets/Home/Home.svg' }}
+                style={{ width: 100, height: 100}}
+            />
+            </Content>
             <Text style={styles.navText} onPress={() => this.props.navigation.navigate('New')}>Add</Text>
             <Text style={styles.navText} onPress={() => this.props.navigation.navigate('Existing')}>Edit</Text>
             <Text style={styles.navText} onPress={() => this.props.navigation.navigate('Previous')}>View</Text>
@@ -126,28 +117,3 @@ const styles = StyleSheet.create({
         zIndex: 1,
     }
 })
-/*
-<Button
-            title="New Routine"
-            onPress={() => this.props.navigation.navigate('New')}
-        />
-        <Button
-            title="Previous Runs"
-            onPress={() => this.props.navigation.navigate('Previous')}
-        />*/
-
-
-        /*
-         <Button style={{padding:'30%', backgroundColor:'#07B162'}} onPress={() => this.props.navigation.navigate('New')}>
-                    <Text style={styles.home}>New Routine</Text>
-                </Button>
-                <Button style={{padding:'25%', backgroundColor:'#07B162'}} onPress={() => this.props.navigation.navigate('Existing')}>
-                    <Text style={styles.home}>Existing Routine</Text>
-                </Button>
-                <Button style={{padding:'30%', backgroundColor:'#07B162'}} onPress={() => this.props.navigation.navigate('Previous')}>
-                    <Text style={styles.home}>Previous Runs</Text>
-                </Button>
-                <Button style={{padding:'30%', backgroundColor:'#07B162'}} onPress={() => this.props.navigation.navigate('Route')}>
-                    <Text style={styles.home}>Routes</Text>
-                </Button>
-         */
