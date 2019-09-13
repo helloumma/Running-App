@@ -7,6 +7,9 @@ import AddIcon from '../assets/home/Add.svg'
 import EditIcon from '../assets/home/Edit.svg'
 import ViewIcon from '../assets/home/View.svg'
 import RouteIcon from '../assets/home/Route.svg'
+import TopLines from '../assets/home/TopLines.svg'
+import BottomLines from '../assets/home/BottomLines.svg'
+import BottomCircles from '../assets/home/BottomCircles.svg'
 
 //import CustomIcon from '../assets/Home/Home.svg'
 export default class Homescreen extends Component {
@@ -30,8 +33,13 @@ export default class Homescreen extends Component {
       }
     return (
         <View style={styles.container}>
-            <Content style={styles.blueBox}></Content>
-            <Content style={styles.pinkBox}></Content>
+            <Content style={styles.blueBox}>
+                <TopLines style={styles.topLines}/>
+                <BottomCircles style={styles.bottomCircles}/>
+            </Content>
+            <Content style={styles.pinkBox}>
+            <BottomLines style={styles.bottomLines}/>
+            </Content>
             <Content style={styles.content}>
             <Text style={styles.title}>Run!</Text>
             <Text style={styles.navText}>Home</Text>
@@ -90,6 +98,14 @@ const styles = StyleSheet.create({
         backgroundColor: '#A8CFE3',
         zIndex:0
     },
+    topLines: {
+        left:260,
+        top:40
+    },
+    bottomLines: {
+        right:20,
+        top:300
+    },
     pinkBox: {
         position: 'absolute',
         top: -70,
@@ -98,6 +114,10 @@ const styles = StyleSheet.create({
         width: 200,
         backgroundColor: '#FFB9BB',
         zIndex:1
+    },
+    bottomCircles: {
+        top:415,
+        right: 25
     },
     home: {
         fontSize: 20, 
