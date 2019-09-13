@@ -5,6 +5,7 @@ import * as Font from 'expo-font'
 import HeaderLines from '../assets/Edit/HeaderLines.svg'
 import RightLines from '../assets/Edit/RightLines.svg'
 import LeftLines from '../assets/Edit/LeftLines.svg'
+import Menu from './Menu'
 
 export default class Existingscreen extends Component {
     constructor(props) {
@@ -27,6 +28,7 @@ export default class Existingscreen extends Component {
       }
     return (
         <View style={styles.container}>
+            <Menu />
             <Content style={styles.yellowBox}></Content>
             <Content style={styles.greenBox}>
                 <HeaderLines style={styles.headerLines}/>

@@ -4,6 +4,7 @@ import { StyleSheet, View, Text } from 'react-native';
 import * as Font from 'expo-font'
 import HeaderDots from '../assets/View/HeaderDots.svg'
 import RightLines from '../assets/View/RightLines.svg'
+import Menu from './Menu'
 
 export default class Previousscreen extends Component {
     constructor(props) {
@@ -26,6 +27,7 @@ export default class Previousscreen extends Component {
       }
     return (
         <View style={styles.container}>
+            <Menu />
             <Content style={styles.yellowBox}></Content>
             <Content style={styles.greenBox}>
                 <HeaderDots style={styles.headerDots}/>

@@ -3,6 +3,7 @@ import { Container, Content, Button } from 'native-base';
 import { StyleSheet, View, Text } from 'react-native';
 import * as Font from 'expo-font'
 import Lines from '../assets/Route/Lines.svg'
+import Menu from './Menu'
 
 export default class Previousscreen extends Component {
     constructor(props) {
@@ -25,6 +26,7 @@ export default class Previousscreen extends Component {
       }
     return (
         <View style={styles.container}>
+            <Menu />
             <Content style={styles.orangeBox}></Content>
             <Content style={styles.sandBox}></Content>
             <Lines style={styles.lines}/>

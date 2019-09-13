@@ -5,6 +5,7 @@ import * as Font from 'expo-font'
 import NewForm from './Add/NewForm'
 import Dots from '../assets/Add/Dots.svg'
 import Lines from '../assets/Add/TitleLines.svg'
+import Menu from './Menu'
 
 export default class Newscreen extends Component {
     constructor(props) {
@@ -27,6 +28,7 @@ export default class Newscreen extends Component {
       }
     return (
         <View style={styles.container}>
+            <Menu/>
             <Content style={styles.blueBox}></Content>
             <Content style={styles.greenBox}><Lines style={styles.lines}/></Content>
             <Dots style={styles.dots}/>
@@ -57,6 +59,7 @@ const styles = StyleSheet.create({
         height: 675,
         zIndex:-1
     },
+    
     imageContent: {
         position: 'absolute',
         top: 75,
