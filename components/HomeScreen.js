@@ -34,7 +34,6 @@ export default class Homescreen extends Component {
             <Content style={styles.pinkBox}></Content>
             <Content style={styles.content}>
             <Text style={styles.title}>Run!</Text>
-            
             <Text style={styles.navText}>Home</Text>
             <Text style={styles.navText} onPress={() => this.props.navigation.navigate('New')}>Add</Text>
             <Text style={styles.navText} onPress={() => this.props.navigation.navigate('Existing')}>Edit</Text>

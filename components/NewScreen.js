@@ -3,6 +3,9 @@ import { Container, Content, Button } from 'native-base';
 import { StyleSheet, View, Text} from 'react-native';
 import * as Font from 'expo-font'
 import NewForm from './Add/NewForm'
+import Dots from '../assets/Add/Dots.svg'
+import Lines from '../assets/Add/TitleLines.svg'
+
 export default class Newscreen extends Component {
     constructor(props) {
         super(props)
@@ -25,11 +28,11 @@ export default class Newscreen extends Component {
     return (
         <View style={styles.container}>
             <Content style={styles.blueBox}></Content>
-            <Content style={styles.greenBox}></Content>
-            <Content style={styles.content}>
+            <Content style={styles.greenBox}><Lines style={styles.lines}/></Content>
+            <Dots style={styles.dots}/>
+            <Content style={styles.content}> 
             <Text style={styles.title}>Add Run</Text>
             <NewForm />
-            
             </Content>
         </View>
     )
@@ -77,6 +80,16 @@ const styles = StyleSheet.create({
         width: 400,
         backgroundColor: '#00F6B7',
         zIndex:1
+    },
+    dots: {
+        position: 'absolute',
+        top: 600,
+        left: 270,
+    },
+    lines: {
+        width:'800px',
+        left: 60,
+        top:7
     },
     home: {
         fontSize: 20, 
