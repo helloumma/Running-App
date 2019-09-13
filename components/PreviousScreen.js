@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Container, Content, Button } from 'native-base';
 import { StyleSheet, View, Text } from 'react-native';
 import * as Font from 'expo-font'
+import HeaderDots from '../assets/View/HeaderDots.svg'
+import RightLines from '../assets/View/RightLines.svg'
 
 export default class Previousscreen extends Component {
     constructor(props) {
@@ -25,7 +27,10 @@ export default class Previousscreen extends Component {
     return (
         <View style={styles.container}>
             <Content style={styles.yellowBox}></Content>
-            <Content style={styles.greenBox}></Content>
+            <Content style={styles.greenBox}>
+                <HeaderDots style={styles.headerDots}/>
+            </Content>
+            <RightLines style={styles.rightLines}/>
             <Content style={styles.content}>
             <Text style={styles.title}>View Runs</Text>
             <Button style={styles.button}>
@@ -65,7 +70,7 @@ const styles = StyleSheet.create({
         position: 'absolute',
         borderWidth: 1,
         borderColor: '#fff',
-        top: -425,
+        top: -475,
         left:30,
         right: 30,
         borderRadius:  8,
@@ -96,12 +101,20 @@ const styles = StyleSheet.create({
     },
     greenBox: {
         position: 'absolute',
-        top: -130,
+        top: -90,
         left: -70,
         height: 120, 
         width: 400,
         backgroundColor: '#00F6B7',
         zIndex:1
+    },
+    rightLines: {
+        left:200,
+        top:100,
+    },
+    headerDots: {
+        left:70,
+        top: 10
     },
     home: {
         fontSize: 20, 
