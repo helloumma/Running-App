@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import { Container, Content, Button } from 'native-base';
 import { StyleSheet, View, Text } from 'react-native';
 import * as Font from 'expo-font'
-import Image from 'react-native-svg'
+import CustomIcon from '../assets/home/home.svg'
 
+//import CustomIcon from '../assets/Home/Home.svg'
 export default class Homescreen extends Component {
     constructor(props) {
         super(props)
@@ -30,9 +31,7 @@ export default class Homescreen extends Component {
             <Content style={styles.content}>
             <Text style={styles.title}>Run!</Text>
             <Text style={styles.navText}>Home</Text>
-            <Content style={styles.imageContent}>
-           
-            </Content>
+            <CustomIcon width={120} height={120} />
             <Text style={styles.navText} onPress={() => this.props.navigation.navigate('New')}>Add</Text>
             <Text style={styles.navText} onPress={() => this.props.navigation.navigate('Existing')}>Edit</Text>
             <Text style={styles.navText} onPress={() => this.props.navigation.navigate('Previous')}>View</Text>
