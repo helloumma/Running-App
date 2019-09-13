@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import { Container, Content, Button } from 'native-base';
 import { StyleSheet, View, Text } from 'react-native';
 import * as Font from 'expo-font'
+import HeaderLines from '../assets/Edit/HeaderLines.svg'
+import RightLines from '../assets/Edit/RightLines.svg'
+import LeftLines from '../assets/Edit/LeftLines.svg'
 
 export default class Existingscreen extends Component {
     constructor(props) {
@@ -25,7 +28,13 @@ export default class Existingscreen extends Component {
     return (
         <View style={styles.container}>
             <Content style={styles.yellowBox}></Content>
-            <Content style={styles.greenBox}></Content>
+            <Content style={styles.greenBox}>
+                <HeaderLines style={styles.headerLines}/>
+            </Content>
+            <Content style={styles.rightLines}>
+                <RightLines/>
+            </Content>
+            <LeftLines style={styles.leftLines}/>
             <Content style={styles.content}>
             <Text style={styles.title}>Edit Runs</Text>
             <Button style={styles.button}>
@@ -50,6 +59,7 @@ export default class Existingscreen extends Component {
                 <Text style={styles.navText}>Run Seven</Text>
             </Button>
             </Content>
+            
         </View>
     )
   }
@@ -65,7 +75,7 @@ const styles = StyleSheet.create({
         position: 'absolute',
         borderWidth: 1,
         borderColor: '#fff',
-        top: -425,
+        top: -555,
         left:30,
         right: 30,
         borderRadius:  8,
@@ -96,12 +106,24 @@ const styles = StyleSheet.create({
     },
     greenBox: {
         position: 'absolute',
-        top: -130,
+        top: -10,
         left: -70,
         height: 120, 
         width: 400,
         backgroundColor: '#00F6B7',
         zIndex:1
+    },
+    headerLines: {
+        left:170,
+        bottom:30
+    },
+    rightLines: {
+        left:30,
+        top: 10
+    },
+    leftLines: {
+        left:300,
+        top:200
     },
     home: {
         fontSize: 20, 
