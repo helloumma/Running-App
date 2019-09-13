@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Container, Content, Button } from 'native-base';
 import { StyleSheet, View, Text } from 'react-native';
 import * as Font from 'expo-font'
+import Lines from '../assets/Route/Lines.svg'
 
 export default class Previousscreen extends Component {
     constructor(props) {
@@ -26,6 +27,7 @@ export default class Previousscreen extends Component {
         <View style={styles.container}>
             <Content style={styles.orangeBox}></Content>
             <Content style={styles.sandBox}></Content>
+            <Lines style={styles.lines}/>
             <Content style={styles.content}>
             <Text style={styles.title}>Routes</Text>
             <Button style={styles.button}>
@@ -65,7 +67,7 @@ const styles = StyleSheet.create({
         position: 'absolute',
         borderWidth: 1,
         borderColor: '#fff',
-        top: -425,
+        top: -555,
         left:30,
         right: 30,
         borderRadius:  8,
@@ -94,9 +96,13 @@ const styles = StyleSheet.create({
         backgroundColor: '#F1BA85',
         zIndex:0
     },
+    lines: {
+        top:100,
+        right:30
+    },
     sandBox: {
         position: 'absolute',
-        top: -130,
+        top: 20,
         left: -70,
         height: 120, 
         width: 400,
