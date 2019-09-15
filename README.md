@@ -1,5 +1,5 @@
 # 🏃‍♀️Running App UI
-This runing app enables users to be able to tailor their running routine to their needs. A beginner can input the amount of the time they would like to run/walk/power walk through their routine.  
+This running app enables users to be able to tailor their running routine to their needs. A beginner can input the amount of the time they would like to run/walk/power walk through their routine.  
 
 ### 📋Aims of App
 * Allow the user to have flexibility with their running routine; add various different functions such as run/walk/power for varied times and order
