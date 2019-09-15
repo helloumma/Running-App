@@ -20,6 +20,8 @@ This runing app enables users to be able to tailor their running routine to thei
 * View the app within the expo app 
 
 ### 💭Future Improvements
+* Make the app responsive on all screens 
+
+### 🖥️Misc
 * This app cannot be viewed correctly on an Andriod device at present time 
 * Use an iPhone X for best results 
-* Make the app responsive on all screens 
