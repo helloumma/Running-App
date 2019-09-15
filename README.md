@@ -21,6 +21,6 @@ This runing app enables users to be able to tailor their running routine to thei
 ### 💭Future Improvements
 * Make the app responsive on all screens 
 
-### 🖥️Misc
+### 🖥️Misc.
 * This app cannot be viewed correctly on an Andriod device at present time 
 * Use an iPhone X for best results 
