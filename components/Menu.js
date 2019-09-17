@@ -12,10 +12,10 @@ export default class Meu extends Component {
     return (
         <View style={styles.content}>
             <Container style={styles.icon}><Home /></Container>
-            <Container style={styles.icon2}><Add /></Container>
-            <Container style={styles.icon3}><Edit /></Container>
-            <Container style={styles.icon4}><ViewIcon /></Container>
-            <Container style={styles.icon5}><Route /></Container>
+            <Container style={styles.icon2} onPress={() => this.props.navigation.navigate('New')}><Add /></Container>
+            <Container style={styles.icon3} onPress={() => this.props.navigation.navigate('Existing')}><Edit /></Container>
+            <Container style={styles.icon4} onPress={() => this.props.navigation.navigate('Previous')}><ViewIcon /></Container>
+            <Container style={styles.icon5} onPress={() => this.props.navigation.navigate('Route')}><Route /></Container>
                 
         </View>
         
